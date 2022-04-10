@@ -11,10 +11,10 @@ jobs:
       - name: Checkout source code.
         uses: actions/checkout@master
 
-      - name: Set up Python 3.8
+      - name: Set up Python 3.9
         uses: actions/setup-python@v1
         with:
-          python-version: "3.8"
+          python-version: "3.9"
 
       - name: Generate deployment package
         run: zip -r deploy.zip . -x '*.git*'
